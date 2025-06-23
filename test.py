@@ -1,14 +1,14 @@
 import requests
 
-BASE_URL = "http://localhost:8082" 
+BASE_URL = "http://3.90.92.74:8080" 
 
 # 1. Login
 login_payload = {
-    "User_mail": "alladdfs@coorreea",  
-    "password": "12345"           
+    "User_mail": "ascorread1",  
+    "password": "1234"           
 }
 
-login_response = requests.post(f"http://localhost:8080/login", json=login_payload)
+login_response = requests.post(f"http://52.203.72.116:8080/login", json=login_payload)
 
 if login_response.status_code == 200:
     token = login_response.json().get("token")
