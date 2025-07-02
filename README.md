@@ -1,4 +1,4 @@
-# Logout Service
+# Logout MicroService
 
 This service is responsible for handling user logout functionality within a larger microservices architecture. It invalidates user sessions by processing JWT tokens.
 
