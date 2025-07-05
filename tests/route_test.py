@@ -4,7 +4,7 @@ BASE_URL = "http://3.90.92.74:8080"
 
 # 1. Login
 login_payload = {
-    "User_mail": "ascorread1",  
+    "User_mail": "allan",  
     "password": "1234"           
 }
 
@@ -24,8 +24,3 @@ logout_response = requests.post(f"{BASE_URL}/logout", headers=headers)
 print("\nLogout:")
 print(logout_response.status_code, logout_response.json())
 
-# 3. Try login
-print("Token test after to logout:")
-protected_response = requests.delete(f"http://localhost:8081/delete-account", headers=headers)
-
-print(protected_response.status_code, protected_response.text)
